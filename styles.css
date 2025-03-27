@@ -1,0 +1,362 @@
+
+
+
+  /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+ 
+ 
+body {
+  background-color: rgb(229, 229, 229) none repeat scroll 0% 0%;;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  header {
+  
+    width: 100%;
+    background-color: #rgb(229, 229, 229) none repeat scroll 0% 0%;;
+    border-bottom: solid 1px black;
+  }
+
+.top-header {
+  display: flex;
+  background-color: #3366cc;
+  color: white;
+  padding: 10px 20px;
+}
+
+.gov-logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  padding-right: 20px;
+}
+
+.gov-logo a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.gov-img {
+  height: 30px;
+  margin-right: 5px;
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.menu-btn {
+  background-color: #4c5cbd;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.menu-btn i {
+  margin-right: 5px;
+}
+
+.colombia-logo {
+  display: flex;
+  align-items: center;
+}
+
+.colombia-logo img {
+  height: 46px;
+}
+
+.salud-logo {
+  height: 30px;
+  margin-left: 10px;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: #fafad2;
+}
+
+.btn-iniciar {
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-registrar {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Main content styles */
+main {
+  
+  width: 80%;
+}
+
+.container {
+ 
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+ 
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.description {
+  margin-bottom: 13px;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+ 
+  margin-bottom: 15px;
+  min-width: 257.2px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.required {
+  color: red;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 34px;
+  font-size: 14px;
+}
+
+select {
+  appearance: auto;
+}
+
+.captcha-group {
+  margin-top: 10px;
+}
+.captcha-container {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+.captcha-image {
+  border: 1px solid #ddd;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.btn-cambiar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 12px;
+}
+
+.btn-cambiar i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  border-top: 1px solid gainsboro;
+  padding-top: 30px;
+}
+
+.btn-verificar {
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.btn-limpiar {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background-color: #3366cc;
+  color: white;
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.footer-logo-gov img {
+  height: 40px;
+}
+
+.footer-logo-colombia img {
+  height: 70px;
+}
+
+.footer-center {
+  width: 30%;
+  position: relative;
+  padding: 0 20px;
+}
+
+.footer-center::before,
+.footer-center::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-center::before {
+  left: 0;
+}
+
+.footer-center::after {
+  right: 0;
+}
+
+.footer-right {
+  width: 35%;
+  padding: 0 20px;
+}
+
+.footer-center h3,
+.footer-right h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-center p,
+.footer-right p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.terms-link {
+  margin-top: 30px;
+}
+
+.terms-link a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .footer-center::before,
+  .footer-center::after {
+    display: none;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+}
+

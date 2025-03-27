@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReTHUS - SISPRO</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="top-header">
+      <div class="gov-logo">
+        <a href="#"><img src="gov-co-logo-white.png" alt="GOV.CO" class="gov-img"> </a>
+      </div>
+      <div class="app-title">
+        SISPRO - Aplicativos Misionales
+      </div>
+    </div>
+    <div class="sub-header">
+      <div class="menu-button" style="display: flex;">
+        <button class="menu-btn">
+          <i class="fas fa-bars"></i>
+          Menú
+        </button>
+        <div class="colombia-logo">
+        <img src="colombia-vida-logo.png" alt="Colombia Potencia de la Vida">
+        <img src="salud-logo.png" alt="Salud" class="salud-logo">
+      </div>
+      </div>
+      
+      <div class="auth-buttons">
+        <button class="btn-iniciar">Iniciar Sesión</button>
+        <button class="btn-registrar">Registrarse</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <h1>ReTHUS</h1>
+      <p class="description">A continuación diligencie la identificación o nombre y apellido de la persona a consultar en el Registro Único Nacional de Talento Humano en Salud.</p>
+      
+      <form id="rethus-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="tipo-identificacion">Tipo de Identificación <span class="required">*</span></label>
+            <select id="tipo-identificacion" required>
+              <option value="">- Select one -</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="numero-identificacion">Número de Identificación <span class="required">*</span></label>
+            <input type="text" id="numero-identificacion" required>
+          </div>
+          <div class="form-group">
+            <label for="primer-nombre">Primer Nombre</label>
+            <input type="text" id="primer-nombre">
+          </div>
+          <div class="form-group">
+            <label for="primer-apellido">Primer Apellido</label>
+            <input type="text" id="primer-apellido">
+          </div>
+        </div>
+        
+        <div class="form-group captcha-group">
+          <label>Confirme los números de la Imagen <span class="required">*</span></label>
+          <div class="captcha-container">
+            <div class="captcha-image">
+              <img src="captcha.png" alt="Captcha" style=" 
+                height: 80px; ">
+            </div>
+            <button type="button" class="btn-cambiar">
+              <i class="fas fa-sync-alt"></i>
+              <span>Cambiar</span>
+            </button>
+          </div>
+          <input type="text" id="captcha-input" style="width: 150px !important;" required>
+        </div>
+        
+        <div class="form-buttons">
+          <button type="submit" class="btn-verificar">Verificar Registro en ReTHUS</button>
+          <button type="reset" class="btn-limpiar">Limpiar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo-gov">
+          <img src="gov-co-logo-white.png" alt="GOV.CO">
+        </div>
+        <div class="footer-logo-colombia">
+          <img src="colombia-vida-logo-white.png" alt="Colombia Potencia de la Vida">
+        </div>
+      </div>
+      
+      <div class="footer-center">
+        <h3>SISPRO</h3>
+        <p>
+          Dirección:<br>
+          Carrera 13 # 32-76 (piso 1)<br>
+          Cundinamarca, Bogotá D.C.<br>
+          Código Postal: 110311
+        </p>
+        
+        <p>
+          Horario de atención:<br>
+          Lunes a viernes 8:00 a.m. a 4:00 p.m. (jornada continua)
+        </p>
+      </div>
+      
+      <div class="footer-right">
+        <h3><i class="fas fa-phone-alt"></i> Contacto</h3>
+        <p>
+          Teléfono conmutador:<br>
+          En Bogotá: 601 330 5043 Opción 2<br>
+          Resto del país: 018000960020 Opción 1
+        </p>
+        
+        <p>
+          Correo de notificaciones judiciales:<br>
+          notificacionesjudiciales@minsalud.gov.co
+        </p>
+        
+        <p class="terms-link">
+          <a href="#">Términos y condiciones</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
